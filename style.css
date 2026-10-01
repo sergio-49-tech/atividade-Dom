@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+input, button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.escondida {
+  display: none;
+}
+
+p.vermelha {
+  color: red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.opcao {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.destaque {
+  background-color: lightblue;
+}
+
+.correta {
+  background-color: green;
+  color: white;
+}
+
+.errada {
+  background-color: red;
+  color: white;
+}
+
+#placar {
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+}

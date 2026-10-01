@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini Quiz</h1>
+
+  <div id="inicio">
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <button id="btnIniciar" disabled>Iniciar Quiz</button>
+  </div>
+
+  <div id="quiz" class="escondida">
+
+    <div class="pergunta escondida">
+      <p>1) (Redes) Qual protocolo atribui endereços IP automaticamente?</p>
+      <ul>
+        <li class="opcao">DNS</li>
+        <li class="opcao" data-correta="sim">DHCP</li>
+        <li class="opcao">FTP</li>
+        <li class="opcao">HTTP</li>
+      </ul>
+    </div>
+
+    <div class="pergunta escondida">
+      <p>2) (Linguagem C) Qual função mostra um texto na tela?</p>
+      <ul>
+        <li class="opcao" data-correta="sim">printf</li>
+        <li class="opcao">scanf</li>
+        <li class="opcao">return</li>
+        <li class="opcao">int</li>
+      </ul>
+    </div>
+
+    <div class="pergunta escondida">
+      <p>3) (Sistemas Operacionais) Qual comando do Linux lista os arquivos de uma pasta?</p>
+      <ul>
+        <li class="opcao">cd</li>
+        <li class="opcao">mkdir</li>
+        <li class="opcao" data-correta="sim">ls</li>
+        <li class="opcao">rm</li>
+      </ul>
+    </div>
+
+    <div class="pergunta escondida">
+      <p>4) (Banco de Dados) Qual comando SQL busca dados de uma tabela?</p>
+      <ul>
+        <li class="opcao">INSERT</li>
+        <li class="opcao">UPDATE</li>
+        <li class="opcao">DELETE</li>
+        <li class="opcao" data-correta="sim">SELECT</li>
+      </ul>
+    </div>
+
+    <button id="btnProximo" disabled>Próxima</button>
+  </div>
+
+  <div id="placar" class="escondida"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
